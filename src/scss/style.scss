@@ -1,0 +1,425 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    overflow-x: hidden;
+    width: 100%;
+    height: auto;
+
+    .header {
+        .all {
+            z-index: 2;
+            width: 100%;
+            height: 60px;
+            position: fixed;
+            top: 0;
+            left: 0;
+            background-color: gray;
+            box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(15px);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .left {
+                display: flex;
+                justify-content: center;
+                margin-left: 50px;
+
+                .text {
+                    margin-left: 50px;
+                    i {
+                        font-size: 20px;
+                    }
+                    span {
+                        font-size: 20px;
+                        font-weight: 700;
+                    }
+                }
+            }
+            .middle {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-right: 120px;
+                ul {
+                    .Home {
+                        position: relative;
+                        color: #0ef0ad;
+                    }
+                    .Home:hover {
+                        .drophome {
+                            display: block;
+                            position: absolute;
+                        }
+                    }
+                    .games {
+                        position: relative;
+                    }
+                    .games:hover {
+                        .dropgames {
+                            display: block;
+                            position: absolute;
+                        }
+                    }
+
+                    .services {
+                        position: relative;
+                    }
+
+                    .services:hover {
+                        .dropservices {
+                            display: block;
+                            position: absolute;
+                        }
+                    }
+
+                    .pages {
+                        position: relative;
+                    }
+                    .pages:hover {
+                        .droppages {
+                            display: block;
+                            position: absolute;
+                        }
+                    }
+                    .blog {
+                        position: relative;
+                    }
+                    .blog:hover {
+                        .dropblog {
+                            display: block;
+                            position: absolute;
+                        }
+                    }
+                }
+
+                li {
+                    display: inline-block;
+                    margin-left: 10px;
+                    font-size: 17px;
+                    color: white;
+                    transition: 0.7s;
+
+                    .drophome {
+                        width: 150px;
+                        height: auto;
+                        background-color: rgba(0, 0, 0, 0.175);
+                        display: none;
+                        ul {
+                            li {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                    .dropgames {
+                        width: 150px;
+                        height: auto;
+                        background-color: rgba(0, 0, 0, 0.175);
+                        display: none;
+                        ul {
+                            li {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                    .dropservices {
+                        width: 150px;
+                        height: auto;
+                        background-color: rgba(0, 0, 0, 0.175);
+                        display: none;
+                        ul {
+                            li {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                    .droppages {
+                        width: 150px;
+                        height: auto;
+                        background-color: rgba(0, 0, 0, 0.175);
+                        display: none;
+                        ul {
+                            li {
+                                display: block;
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                    .dropblog {
+                        width: 150px;
+                        height: auto;
+                        background-color: rgba(0, 0, 0, 0.175);
+                        display: none;
+                        ul {
+                            li {
+                                margin-bottom: 20px;
+                            }
+                        }
+                    }
+                }
+                li:hover {
+                    color: #0ef0ad;
+                }
+            }
+            .right {
+                display: flex;
+                justify-content: space-between;
+                i {
+                    font-size: 13px;
+                    margin-left: 15px;
+                    margin-right: 5px;
+                    padding: 10px;
+                    border: 1px solid black;
+                    border-radius: 100%;
+                    color: white;
+                }
+
+                .part {
+                    margin-right: 60px;
+                }
+            }
+        }
+    }
+
+    #two {
+        position: relative;
+        width: 100%;
+        height: 1100px;
+        background-color: rgba(5, 13, 48, 0.904);
+
+        #mouse {
+            z-index: 1;
+            width: 30px;
+            height: 30px;
+            border: 3px solid rgb(3, 255, 75);
+            position: absolute;
+            border-radius: 50%;
+            transition: 0.1s;
+        }
+
+        .animation {
+            position: absolute;
+            top: 30%;
+            left: 4%;
+            display: flex;
+            justify-content: space-between;
+
+            .leftanimation {
+                .ball1 {
+                    position: absolute;
+                    bottom: 0;
+                    left: -10%;
+                    animation: ball1 3s linear infinite;
+                    @keyframes ball1 {
+                        0% {
+                            transform: translate(0px);
+                        }
+                        50% {
+                            transform: translate(-20px);
+                        }
+                    }
+                }
+                .ball2 {
+                    position: absolute;
+                    top: 50%;
+                    left: 0;
+                    animation: ball2 3s linear infinite;
+                    @keyframes ball2 {
+                        0% {
+                            transform: translate(0px);
+                        }
+                        50% {
+                            transform: translate(-15px);
+                        }
+                    }
+                }
+                .ball3 {
+                    animation: ball3 3s linear infinite;
+                    @keyframes ball3 {
+                        0% {
+                            transform: translatey(0px);
+                        }
+                        50% {
+                            transform: translatey(-15px);
+                        }
+                    }
+                }
+            }
+
+            .planetanimation {
+                img {
+                    width: 70%;
+                    animation: planet 35s linear infinite;
+                }
+                @keyframes planet {
+                    0% {
+                        transform: rotate(0deg);
+                    }
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+            .rightanimation {
+                position: relative;
+
+                .ball5 {
+                    position: absolute;
+                    bottom: 0;
+                    left: -200%;
+                    animation: ball5 3s linear infinite;
+                    @keyframes ball5 {
+                        0% {
+                            transform: translate(0px);
+                        }
+                        50% {
+                            transform: translate(20px);
+                        }
+                    }
+                }
+                .ball4 {
+                    position: absolute;
+                    bottom: 0;
+                    right: 0;
+                    animation: ball4 3s linear infinite;
+                    @keyframes ball4 {
+                        0% {
+                            transform: translatey(0px);
+                        }
+                        50% {
+                            transform: translatey(-15px);
+                        }
+                    }
+                }
+                .ball6 {
+                    animation: ball6 3s linear infinite;
+                    @keyframes ball6 {
+                        0% {
+                            transform: translatey(0px);
+                        }
+                        50% {
+                            transform: translatey(-15px);
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    .console2 {
+        position: absolute;
+        top: 10%;
+        left: 30%;
+    }
+    .card {
+        width: 400px;
+        height: 650px;
+        background-color: white;
+        position: absolute;
+        top: 20%;
+        left: 68%;
+        .in {
+            position: absolute;
+            top: 2%;
+            left: 5%;
+            width: 90%;
+            height: 90%;
+            img {
+                width: 100%;
+            }
+            p {
+                font-size: 40px;
+                font-weight: 800;
+                color: black;
+                position: absolute;
+                left: 20%;
+                top: 80%;
+            }
+            .store {
+                display: flex;
+                justify-content: space-between;
+                width: 90%;
+                position: absolute;
+                bottom: 0%;
+                left: -3%;
+                img {
+                    width: 50%;
+                    margin-left: 20px;
+                }
+            }
+        }
+    }
+    .textanimation {
+        width: 500px;
+        height: 300px;
+        position: absolute;
+        top: 60%;
+        left: 3%;
+        .p1 {
+            width: 100%;
+            font-size: 30px;
+            font-weight: 900;
+            color: #0ef0ad;
+        }
+        .p2 {
+            width: 100%;
+            font-size: 65px;
+            font-weight: 900;
+            color: white;
+        }
+        .p3{position: absolute;
+            bottom: 0;
+            width: 100%;
+            font-size: 23px;
+            font-weight: 900;
+            color: rgba(255, 255, 255, 0.853);
+        }
+        .animated-text {
+            position: absolute;
+            top: 50%;
+            text-align: center;
+            font-size: 65px;
+            color: #0ef0ad;
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    }
+    .console1 {
+        position: absolute;
+        bottom: 0;
+        left: 38%;
+    }
+    .feature {
+        position: absolute;
+        top: 16%;
+        right: 10%;
+        width: 200px;
+        height: 100px;
+        display: flex;
+        justify-content: space-between;
+        img {
+            width: 20%;
+            height: 25%;
+            position: absolute;
+            right: 80%;
+            top: 5%;
+        }
+        span {
+            font-size: 25px;
+            font-weight: 800;
+            color: white;
+            width: 100%;
+            position: absolute;
+            right: -28%;
+            top: -5%;
+        }
+    }
+    .three {
+        width: 100%;
+        height: 500px;
+        background-color: #0ef0ad;
+    }
+}

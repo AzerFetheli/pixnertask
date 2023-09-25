@@ -1,0 +1,384 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  width: 100%;
+  height: auto;
+}
+body .header .all {
+  z-index: 2;
+  width: 100%;
+  height: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: gray;
+  box-shadow: 0px 4px 24px -1px rgba(0, 0, 0, 0.2);
+  -webkit-backdrop-filter: blur(15px);
+          backdrop-filter: blur(15px);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .header .all .left {
+  display: flex;
+  justify-content: center;
+  margin-left: 50px;
+}
+body .header .all .left .text {
+  margin-left: 50px;
+}
+body .header .all .left .text i {
+  font-size: 20px;
+}
+body .header .all .left .text span {
+  font-size: 20px;
+  font-weight: 700;
+}
+body .header .all .middle {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 120px;
+}
+body .header .all .middle ul .Home {
+  position: relative;
+  color: #0ef0ad;
+}
+body .header .all .middle ul .Home:hover .drophome {
+  display: block;
+  position: absolute;
+}
+body .header .all .middle ul .games {
+  position: relative;
+}
+body .header .all .middle ul .games:hover .dropgames {
+  display: block;
+  position: absolute;
+}
+body .header .all .middle ul .services {
+  position: relative;
+}
+body .header .all .middle ul .services:hover .dropservices {
+  display: block;
+  position: absolute;
+}
+body .header .all .middle ul .pages {
+  position: relative;
+}
+body .header .all .middle ul .pages:hover .droppages {
+  display: block;
+  position: absolute;
+}
+body .header .all .middle ul .blog {
+  position: relative;
+}
+body .header .all .middle ul .blog:hover .dropblog {
+  display: block;
+  position: absolute;
+}
+body .header .all .middle li {
+  display: inline-block;
+  margin-left: 10px;
+  font-size: 17px;
+  color: white;
+  transition: 0.7s;
+}
+body .header .all .middle li .drophome {
+  width: 150px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.175);
+  display: none;
+}
+body .header .all .middle li .drophome ul li {
+  margin-bottom: 20px;
+}
+body .header .all .middle li .dropgames {
+  width: 150px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.175);
+  display: none;
+}
+body .header .all .middle li .dropgames ul li {
+  margin-bottom: 20px;
+}
+body .header .all .middle li .dropservices {
+  width: 150px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.175);
+  display: none;
+}
+body .header .all .middle li .dropservices ul li {
+  margin-bottom: 20px;
+}
+body .header .all .middle li .droppages {
+  width: 150px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.175);
+  display: none;
+}
+body .header .all .middle li .droppages ul li {
+  display: block;
+  margin-bottom: 20px;
+}
+body .header .all .middle li .dropblog {
+  width: 150px;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.175);
+  display: none;
+}
+body .header .all .middle li .dropblog ul li {
+  margin-bottom: 20px;
+}
+body .header .all .middle li:hover {
+  color: #0ef0ad;
+}
+body .header .all .right {
+  display: flex;
+  justify-content: space-between;
+}
+body .header .all .right i {
+  font-size: 13px;
+  margin-left: 15px;
+  margin-right: 5px;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 100%;
+  color: white;
+}
+body .header .all .right .part {
+  margin-right: 60px;
+}
+body #two {
+  position: relative;
+  width: 100%;
+  height: 1100px;
+  background-color: rgba(5, 13, 48, 0.904);
+}
+body #two #mouse {
+  z-index: 1;
+  width: 30px;
+  height: 30px;
+  border: 3px solid rgb(3, 255, 75);
+  position: absolute;
+  border-radius: 50%;
+  transition: 0.1s;
+}
+body #two .animation {
+  position: absolute;
+  top: 30%;
+  left: 4%;
+  display: flex;
+  justify-content: space-between;
+}
+body #two .animation .leftanimation .ball1 {
+  position: absolute;
+  bottom: 0;
+  left: -10%;
+  animation: ball1 3s linear infinite;
+}
+@keyframes ball1 {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(-20px);
+  }
+}
+body #two .animation .leftanimation .ball2 {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  animation: ball2 3s linear infinite;
+}
+@keyframes ball2 {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(-15px);
+  }
+}
+body #two .animation .leftanimation .ball3 {
+  animation: ball3 3s linear infinite;
+}
+@keyframes ball3 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-15px);
+  }
+}
+body #two .animation .planetanimation img {
+  width: 70%;
+  animation: planet 35s linear infinite;
+}
+@keyframes planet {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+body #two .animation .rightanimation {
+  position: relative;
+}
+body #two .animation .rightanimation .ball5 {
+  position: absolute;
+  bottom: 0;
+  left: -200%;
+  animation: ball5 3s linear infinite;
+}
+@keyframes ball5 {
+  0% {
+    transform: translate(0px);
+  }
+  50% {
+    transform: translate(20px);
+  }
+}
+body #two .animation .rightanimation .ball4 {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  animation: ball4 3s linear infinite;
+}
+@keyframes ball4 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-15px);
+  }
+}
+body #two .animation .rightanimation .ball6 {
+  animation: ball6 3s linear infinite;
+}
+@keyframes ball6 {
+  0% {
+    transform: translatey(0px);
+  }
+  50% {
+    transform: translatey(-15px);
+  }
+}
+body .console2 {
+  position: absolute;
+  top: 10%;
+  left: 30%;
+}
+body .card {
+  width: 400px;
+  height: 650px;
+  background-color: white;
+  position: absolute;
+  top: 20%;
+  left: 68%;
+}
+body .card .in {
+  position: absolute;
+  top: 2%;
+  left: 5%;
+  width: 90%;
+  height: 90%;
+}
+body .card .in img {
+  width: 100%;
+}
+body .card .in p {
+  font-size: 40px;
+  font-weight: 800;
+  color: black;
+  position: absolute;
+  left: 20%;
+  top: 80%;
+}
+body .card .in .store {
+  display: flex;
+  justify-content: space-between;
+  width: 90%;
+  position: absolute;
+  bottom: 0%;
+  left: -3%;
+}
+body .card .in .store img {
+  width: 50%;
+  margin-left: 20px;
+}
+body .textanimation {
+  width: 500px;
+  height: 300px;
+  position: absolute;
+  top: 60%;
+  left: 3%;
+}
+body .textanimation .p1 {
+  width: 100%;
+  font-size: 30px;
+  font-weight: 900;
+  color: #0ef0ad;
+}
+body .textanimation .p2 {
+  width: 100%;
+  font-size: 65px;
+  font-weight: 900;
+  color: white;
+}
+body .textanimation .p3 {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  font-size: 23px;
+  font-weight: 900;
+  color: rgba(255, 255, 255, 0.853);
+}
+body .textanimation .animated-text {
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  font-size: 65px;
+  color: #0ef0ad;
+  white-space: nowrap;
+  overflow: hidden;
+}
+body .console1 {
+  position: absolute;
+  bottom: 0;
+  left: 38%;
+}
+body .feature {
+  position: absolute;
+  top: 16%;
+  right: 10%;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+}
+body .feature img {
+  width: 20%;
+  height: 25%;
+  position: absolute;
+  right: 80%;
+  top: 5%;
+}
+body .feature span {
+  font-size: 25px;
+  font-weight: 800;
+  color: white;
+  width: 100%;
+  position: absolute;
+  right: -28%;
+  top: -5%;
+}
+body .three {
+  width: 100%;
+  height: 500px;
+  background-color: #0ef0ad;
+}/*# sourceMappingURL=style.css.map */
